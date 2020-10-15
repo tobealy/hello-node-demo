@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: hello-node-ingress-green
+spec:
+  rules:
+  - host: hello-node.apps.cluster-874f.874f.example.opentlc.com
+    http:
+      paths:
+      - backend:
+          serviceName: hello-node
+          servicePort: 8080
