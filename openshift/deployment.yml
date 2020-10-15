@@ -28,7 +28,7 @@ spec:
       containers:
         - name: hello-node
           image: >-
-                  quay.apps.cluster-874f.874f.example.opentlc.com/aibrahim/hello-node:latest
+                  quay.io/aibrahim/hello-node:latest
           ports:
             - containerPort: 8080
               protocol: TCP
