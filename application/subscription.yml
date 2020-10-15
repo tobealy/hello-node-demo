@@ -1,0 +1,16 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: node-subscription
+  namespace: production
+  labels:
+    app: hello-node
+  annotations:
+    apps.open-cluster-management.io/github-path: openshift
+    apps.open-cluster-management.io/github-branch: main      
+spec:
+  channel: production/gitops
+  placement:
+    placementRef:
+      name: node-placement
+      kind: PlacementRule

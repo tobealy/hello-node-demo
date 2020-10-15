@@ -1,0 +1,11 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+labels:
+  app: hello-node
+metadata:
+  name: node-placement
+  namespace: production
+spec:
+  clusterSelector:
+    matchLabels:
+      environment: prod
