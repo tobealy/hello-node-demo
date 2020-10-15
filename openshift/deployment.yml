@@ -5,6 +5,7 @@ metadata:
     maintainer: 'Aly Ibrahim <aly@redhat.com>'
     alpha.image.policy.openshift.io/resolve-names: '*'
   name: hello-node
+  namespace: sysco
   labels:
     app: hello-node
     app.kubernetes.io/component: hello-node

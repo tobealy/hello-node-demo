@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: hello-node
+  namespace: sysco
 spec:
   rules:
   - host: hello-node.apps.cluster-874f.874f.example.opentlc.com
