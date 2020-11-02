@@ -3,25 +3,22 @@ apiVersion: route.openshift.io/v1
 metadata:
   annotations:
     maintainer: 'Aly Ibrahim <aly@redhat.com>'
-    haproxy.router.openshift.io/balance: roundrobin
-  name: hello-node-prod
+  name: hello-node-blue
   namespace: sysco
   labels:
     app: hello-node
+    color: blue
     app.kubernetes.io/component: hello-node
     app.kubernetes.io/instance: hello-node
     app.kubernetes.io/name: nodejs
     app.kubernetes.io/part-of: hello-node
     app.openshift.io/runtime: nodejs
+    app.openshift.io/runtime-version: '12'
 spec:
   to:
     kind: Service
     name: hello-node-blue
     weight: 100
-  to:
-    kind: Service
-    name: hello-node-green
-    weight: 0
   port:
     targetPort: 8080-tcp
   wildcardPolicy: None
