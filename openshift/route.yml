@@ -18,8 +18,8 @@ spec:
     kind: Service
     name: hello-node-blue
     weight: 100
-  to:
-    kind: Service
+  alternateBackends:
+  - kind: Service
     name: hello-node-green
     weight: 0
   port:
