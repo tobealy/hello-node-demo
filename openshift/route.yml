@@ -16,7 +16,7 @@ metadata:
 spec:
   to:
     kind: Service
-    name: hello-node
+    name: hello-node-blue
     weight: 100
   port:
     targetPort: 8080-tcp
