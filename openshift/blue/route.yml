@@ -4,7 +4,6 @@ metadata:
   annotations:
     maintainer: 'Aly Ibrahim <aly@redhat.com>'
   name: hello-node-blue
-  namespace: sysco
   labels:
     app: hello-node
     color: blue
