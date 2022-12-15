@@ -3,7 +3,6 @@ apiVersion: route.openshift.io/v1
 metadata:
   annotations:
     maintainer: 'Aly Ibrahim <aly@redhat.com>'
-    argocd.argoproj.io/hook: Skip
   name: hello-node-blue
   labels:
     app: hello-node
